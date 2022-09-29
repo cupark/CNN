@@ -50,6 +50,59 @@ What is Filter
    
   P의 위치에 있는 데이터가 합성곱 과정에서 원치 않는 노이즈를 만들게 되지만 차원의 손실을 발생시키는것 보다 낫기 떄문에 노이즈와 차원손실을 서로 Trade Off 해준다. 
 ==============================================================================================================================
+
+==============================================================================================================================
+ What is Pooling Layer
+ 
+  Convolution을 거쳐 나온 Convolution Layer = Activation Map이 있을때, 이것을 Resizeing하여 새로운 Layer를 얻는것이다.
+  새로운 Layer를 만들지만 Convolution과 구별되는 이유는 
+   1. Convolution은 N x N의 형태의 Matrix로 부터 값을 연산하여 결과 데이터를 생성하는 개념이지만 Pooling 같은 경우 Matrix 연산 없이 Pixel의 값을 
+      하나 뽑아오는 과정이기 때문이다. 
+   2. 단순 어떠한 Pixel 값을 뽑아올 건지에 대한 정의가 들어있다. 
+  
+   Activation Map의 K가  4 x 4, S = 2, F = 2 x 2 일때 Max Pooling을 진행하면 각 Filter에서 가장 큰 값을 뽑아내어 2 x 2의 Maxpooling Layer가 생성된다.
+   이러한 Pixel값을 뽑아오는 이유는 Overfitting을 방지하기 위함이다.
+   
+   1) Overfitting 
+    Feature : Elements Of Input Data
+    Parameter : Elements Of Weight Matrix 
+    예5) 
+        (1) 원본 이미지 데이터 : 96 x 96 (Pixel)
+        (2) Feature : 96 x 96 (개)
+        (3) Filter : 8 x 8 x 400
+        (4) Stride : 1
+        (5) Padding : 0
+        
+        K = ((N+2P)-F)/S + 1 
+          = ((96 + 2 * 0) - 8)/1 + 1
+          = 89
+        : Convolution Layer = 89 x 89 = 7,921개의 Feature 생성.
+        : Convolution Layer x Filter
+          = 7921 x 400 = 3,168,400개의 Feature 생성.
+        
+     
+    2) Overfitting & Pooling 
+     위에 예5)에서 보듯 Convolution 과정에서 수많은 Feature가 생성된 모델은 Overfitting 될 수있다. 이러한 Overfitting을 방지하기 위하여 
+     Pooling을 사용한다. Pooling을 해줌에 따라 Feature에 많은 N x N의 고차원 요소를 저차원으로 변환 할 수 있기 때문이다.
+==============================================================================================================================
+     
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+   
   
   
   
