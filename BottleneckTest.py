@@ -1,3 +1,5 @@
+# Example_of_the_difference_between_Standard_and_BottleNeck_parameters_in_ResNet
+
 import torch
 import torch.nn as nn
 
