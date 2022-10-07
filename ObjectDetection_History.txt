@@ -1,0 +1,19 @@
+
+이전 - 전통적인 방식
+2012 : AlexNet - DeepLearning Base
+2014 : 1) 1 Stage
+       2) 2 Stage : Overfeat, RCNN, SPP-net
+       
+2015 : 1) 1 Stage
+       2) 2 Stage : Fast RCNN, Faster RCNN
+       
+2016 : 1) 1 Stage : YOLOv1, SSD
+       2) 2 Stage : R-FCN
+       
+2017 : 1) 1 Stage : YOLO9000, Retina-Net
+       2) 2 Stage : Pyramid Networks, Mask RCNN
+       
+2019 : 1) 1 Stage : YOLOv3
+       2) 2 Stage 
+              
+ 
