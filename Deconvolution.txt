@@ -1,0 +1,4 @@
+Deconvolution 
+  - CNN에서 Convolution은 입력되는 Image나 Feature Map, #Reciptive Filed에 대하여 파생 Feature Map의 크기(Size)를 줄인다.
+  
+  
