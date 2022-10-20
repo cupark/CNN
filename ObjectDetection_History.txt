@@ -16,4 +16,10 @@
 2019 : 1) 1 Stage : YOLOv3
        2) 2 Stage 
               
+ 2022-10-13 : densenet, googlenet, yolov1
+ 2022-10-20 : vgg16, darknet19, yolov2
+ 2022-10-27 : rcnn, spp-net, fast rcnn, faster rcnn
+ 2022-11-04 : r-fcn, pn, mask rcnn, yolov3
+ 2022-11-11 : yolov3, yolov4
+ 2022-11-18 : yolov4
  
